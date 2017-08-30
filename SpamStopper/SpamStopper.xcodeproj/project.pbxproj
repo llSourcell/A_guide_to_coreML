@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB7C5DA51EFFA319000823BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7C5DA41EFFA319000823BA /* Assets.xcassets */; };
+		FB7C5DAC1EFFA319000823BA /* SpamStopper MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FB7C5DAB1EFFA319000823BA /* SpamStopper MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FB7C5DB11EFFA319000823BA /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7C5DB01EFFA319000823BA /* Messages.framework */; };
+		FB7C5DB41EFFA319000823BA /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7C5DB31EFFA319000823BA /* MessagesViewController.swift */; };
+		FB7C5DB71EFFA319000823BA /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7C5DB51EFFA319000823BA /* MainInterface.storyboard */; };
+		FB7C5DB91EFFA319000823BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7C5DB81EFFA319000823BA /* Assets.xcassets */; };
+		FB7C5DC61EFFA331000823BA /* SMSSpamCollection.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB7C5DC41EFFA331000823BA /* SMSSpamCollection.txt */; };
+		FB7C5DC71EFFA331000823BA /* SMSSpamCollection.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB7C5DC41EFFA331000823BA /* SMSSpamCollection.txt */; };
+		FB7C5DCA1EFFA641000823BA /* MessageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FB7C5DC91EFFA641000823BA /* MessageClassifier.mlmodel */; };
+		FB7C5DCC1EFFAB70000823BA /* words_ordered.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB7C5DCB1EFFAB6F000823BA /* words_ordered.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB7C5DAD1EFFA319000823BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB7C5D9B1EFFA319000823BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB7C5DAA1EFFA319000823BA;
+			remoteInfo = "SpamStopper MessagesExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FB7C5DC01EFFA319000823BA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FB7C5DAC1EFFA319000823BA /* SpamStopper MessagesExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FB7C5DA11EFFA319000823BA /* SpamStopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpamStopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB7C5DA41EFFA319000823BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB7C5DA61EFFA319000823BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB7C5DAB1EFFA319000823BA /* SpamStopper MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SpamStopper MessagesExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB7C5DB01EFFA319000823BA /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		FB7C5DB31EFFA319000823BA /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		FB7C5DB61EFFA319000823BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		FB7C5DB81EFFA319000823BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB7C5DBA1EFFA319000823BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB7C5DC41EFFA331000823BA /* SMSSpamCollection.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SMSSpamCollection.txt; path = ../../SMSSpamCollection.txt; sourceTree = "<group>"; };
+		FB7C5DC91EFFA641000823BA /* MessageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MessageClassifier.mlmodel; path = ../../MessageClassifier.mlmodel; sourceTree = "<group>"; };
+		FB7C5DCB1EFFAB6F000823BA /* words_ordered.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = words_ordered.txt; path = ../../words_ordered.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB7C5DA81EFFA319000823BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB7C5DB11EFFA319000823BA /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB7C5D9A1EFFA319000823BA = {
+			isa = PBXGroup;
+			children = (
+				FB7C5DA31EFFA319000823BA /* SpamStopper */,
+				FB7C5DB21EFFA319000823BA /* SpamStopper MessagesExtension */,
+				FB7C5DAF1EFFA319000823BA /* Frameworks */,
+				FB7C5DA21EFFA319000823BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB7C5DA21EFFA319000823BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB7C5DA11EFFA319000823BA /* SpamStopper.app */,
+				FB7C5DAB1EFFA319000823BA /* SpamStopper MessagesExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB7C5DA31EFFA319000823BA /* SpamStopper */ = {
+			isa = PBXGroup;
+			children = (
+				FB7C5DA41EFFA319000823BA /* Assets.xcassets */,
+				FB7C5DA61EFFA319000823BA /* Info.plist */,
+			);
+			path = SpamStopper;
+			sourceTree = "<group>";
+		};
+		FB7C5DAF1EFFA319000823BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB7C5DB01EFFA319000823BA /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB7C5DB21EFFA319000823BA /* SpamStopper MessagesExtension */ = {
+			isa = PBXGroup;
+			children = (
+				FB7C5DC91EFFA641000823BA /* MessageClassifier.mlmodel */,
+				FB7C5DC41EFFA331000823BA /* SMSSpamCollection.txt */,
+				FB7C5DCB1EFFAB6F000823BA /* words_ordered.txt */,
+				FB7C5DB31EFFA319000823BA /* MessagesViewController.swift */,
+				FB7C5DB51EFFA319000823BA /* MainInterface.storyboard */,
+				FB7C5DB81EFFA319000823BA /* Assets.xcassets */,
+				FB7C5DBA1EFFA319000823BA /* Info.plist */,
+			);
+			path = "SpamStopper MessagesExtension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB7C5DA01EFFA319000823BA /* SpamStopper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB7C5DC11EFFA319000823BA /* Build configuration list for PBXNativeTarget "SpamStopper" */;
+			buildPhases = (
+				FB7C5D9F1EFFA319000823BA /* Resources */,
+				FB7C5DC01EFFA319000823BA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB7C5DAE1EFFA319000823BA /* PBXTargetDependency */,
+			);
+			name = SpamStopper;
+			productName = SpamStopper;
+			productReference = FB7C5DA11EFFA319000823BA /* SpamStopper.app */;
+			productType = "com.apple.product-type.application.messages";
+		};
+		FB7C5DAA1EFFA319000823BA /* SpamStopper MessagesExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB7C5DBD1EFFA319000823BA /* Build configuration list for PBXNativeTarget "SpamStopper MessagesExtension" */;
+			buildPhases = (
+				FB7C5DA71EFFA319000823BA /* Sources */,
+				FB7C5DA81EFFA319000823BA /* Frameworks */,
+				FB7C5DA91EFFA319000823BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SpamStopper MessagesExtension";
+			productName = "SpamStopper MessagesExtension";
+			productReference = FB7C5DAB1EFFA319000823BA /* SpamStopper MessagesExtension.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB7C5D9B1EFFA319000823BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Gokul Swamy";
+				TargetAttributes = {
+					FB7C5DA01EFFA319000823BA = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					FB7C5DAA1EFFA319000823BA = {
+						CreatedOnToolsVersion = 9.0;
+					};
+				};
+			};
+			buildConfigurationList = FB7C5D9E1EFFA319000823BA /* Build configuration list for PBXProject "SpamStopper" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB7C5D9A1EFFA319000823BA;
+			productRefGroup = FB7C5DA21EFFA319000823BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB7C5DA01EFFA319000823BA /* SpamStopper */,
+				FB7C5DAA1EFFA319000823BA /* SpamStopper MessagesExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB7C5D9F1EFFA319000823BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB7C5DA51EFFA319000823BA /* Assets.xcassets in Resources */,
+				FB7C5DC61EFFA331000823BA /* SMSSpamCollection.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB7C5DA91EFFA319000823BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB7C5DB91EFFA319000823BA /* Assets.xcassets in Resources */,
+				FB7C5DC71EFFA331000823BA /* SMSSpamCollection.txt in Resources */,
+				FB7C5DCC1EFFAB70000823BA /* words_ordered.txt in Resources */,
+				FB7C5DB71EFFA319000823BA /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB7C5DA71EFFA319000823BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB7C5DB41EFFA319000823BA /* MessagesViewController.swift in Sources */,
+				FB7C5DCA1EFFA641000823BA /* MessageClassifier.mlmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB7C5DAE1EFFA319000823BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB7C5DAA1EFFA319000823BA /* SpamStopper MessagesExtension */;
+			targetProxy = FB7C5DAD1EFFA319000823BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB7C5DB51EFFA319000823BA /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB7C5DB61EFFA319000823BA /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB7C5DBB1EFFA319000823BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				COREML_CODEGEN_LANGUAGE = Swift;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB7C5DBC1EFFA319000823BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				COREML_CODEGEN_LANGUAGE = Swift;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB7C5DBE1EFFA319000823BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = ZVC58YN32D;
+				INFOPLIST_FILE = "SpamStopper MessagesExtension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.gokulswamy.SpamStopper.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB7C5DBF1EFFA319000823BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = ZVC58YN32D;
+				INFOPLIST_FILE = "SpamStopper MessagesExtension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.gokulswamy.SpamStopper.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FB7C5DC21EFFA319000823BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZVC58YN32D;
+				INFOPLIST_FILE = SpamStopper/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = me.gokulswamy.SpamStopper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB7C5DC31EFFA319000823BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZVC58YN32D;
+				INFOPLIST_FILE = SpamStopper/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = me.gokulswamy.SpamStopper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB7C5D9E1EFFA319000823BA /* Build configuration list for PBXProject "SpamStopper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB7C5DBB1EFFA319000823BA /* Debug */,
+				FB7C5DBC1EFFA319000823BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB7C5DBD1EFFA319000823BA /* Build configuration list for PBXNativeTarget "SpamStopper MessagesExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB7C5DBE1EFFA319000823BA /* Debug */,
+				FB7C5DBF1EFFA319000823BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB7C5DC11EFFA319000823BA /* Build configuration list for PBXNativeTarget "SpamStopper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB7C5DC21EFFA319000823BA /* Debug */,
+				FB7C5DC31EFFA319000823BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB7C5D9B1EFFA319000823BA /* Project object */;
+}
